@@ -20,7 +20,7 @@ function loveit_button($input) {
  } else {
 	$link = substr($link, 6, strlen($link));
  }
- $loveItLink = "http://localhost:8080/api/v1/thank/http" . $link;
+ $loveItLink = "https://loveit.tips/api/v1/thank/http" . $link;
  return $input . "<iframe src='". $loveItLink . "' width='80' height='80' frameBorder='0' style='position: fixed; right: 10px; bottom: 10px'/>";
 }
 
