@@ -21,7 +21,7 @@ function loveit_button($input) {
 	$link = substr($link, 6, strlen($link));
  }
  $loveItLink = "http://localhost:8080/api/v1/thank/http" . $link;
- return $input . "<iframe src='". $loveItLink . "' width='100' height='50' frameBorder='0'/>";
+ return $input . "<iframe src='". $loveItLink . "' width='80' height='80' frameBorder='0' style='position: fixed; right: 10px; bottom: 10px'/>";
 }
 
 // Now we set that function up to execute when the admin_notices action is called
